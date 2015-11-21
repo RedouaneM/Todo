@@ -1,1 +1,13 @@
-je suis todo
+<h3>Ma liste de taches</h3>
+<div ng-app="app" ng-controller= "todoctrl">
+
+        <form ng-submit = enregistrer()>
+            <input type="text" name="tache" ng-model="tache" placeholder="tache">
+            <input type="submit" value="ajouter">
+        </form>
+    <label>Taches a faire : </label>
+        <div ng-repeat="elemnt in liste ">
+            {{elemnt}}
+            <br/>
+        </div>
+</div>
